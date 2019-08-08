@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,33 +15,70 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What tree do you feel like today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVa-Ls-g0N">
-                                <rect key="frame" x="82" y="191" width="250" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What tree do you feel like today?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVa-Ls-g0N">
+                                <rect key="frame" x="33" y="191" width="310" height="25.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yww-ae-iv3">
-                                <rect key="frame" x="172" y="140" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yww-ae-iv3">
+                                <rect key="frame" x="70" y="140" width="235" height="39"/>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8u-jJ-vgb">
-                                <rect key="frame" x="192" y="343" width="73" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2m-Lj-9Dz">
+                                <rect key="frame" x="80" y="249.66666666666663" width="215" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="🌳"/>
+                                <connections>
+                                    <action selector="oakTreeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBd-7Y-F24"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqh-3L-Gjm">
+                                <rect key="frame" x="80" y="596.66666666666663" width="215" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🌴"/>
+                                <connections>
+                                    <action selector="palmTreeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ulq-wH-CAF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SH-xq-MZD">
+                                <rect key="frame" x="80" y="412.66666666666669" width="215" height="132.00000000000006"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="🌲"/>
+                                <connections>
+                                    <action selector="evergreenTreeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bde-Wz-obU"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.62659268709810745" green="0.72599579015544036" blue="0.67018083591721578" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M2m-Lj-9Dz" firstAttribute="top" secondItem="AVa-Ls-g0N" secondAttribute="bottom" constant="33" id="53O-XU-yqH"/>
+                            <constraint firstItem="Eqh-3L-Gjm" firstAttribute="top" secondItem="1SH-xq-MZD" secondAttribute="bottom" constant="52" id="5oY-WH-56S"/>
+                            <constraint firstItem="AVa-Ls-g0N" firstAttribute="top" secondItem="yww-ae-iv3" secondAttribute="bottom" constant="12" id="705-bJ-aw9"/>
+                            <constraint firstItem="M2m-Lj-9Dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="9Y2-cd-5Nt"/>
+                            <constraint firstItem="AVa-Ls-g0N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Ask-Wm-z38"/>
+                            <constraint firstItem="Eqh-3L-Gjm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ROC-Ec-0cd"/>
+                            <constraint firstItem="1SH-xq-MZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="TTd-Tz-bkb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yww-ae-iv3" secondAttribute="trailing" constant="70" id="TdQ-OA-sO5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eqh-3L-Gjm" secondAttribute="trailing" constant="80" id="Txx-Tm-ZMQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AVa-Ls-g0N" secondAttribute="trailing" constant="32" id="YxT-tf-ihb"/>
+                            <constraint firstItem="yww-ae-iv3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="ZPZ-ke-HC9"/>
+                            <constraint firstItem="Eqh-3L-Gjm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="a47-Fh-uUH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eqh-3L-Gjm" secondAttribute="trailing" constant="80" id="aSO-WD-P4V"/>
+                            <constraint firstItem="1SH-xq-MZD" firstAttribute="top" secondItem="M2m-Lj-9Dz" secondAttribute="bottom" constant="31" id="adP-ot-6GM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1SH-xq-MZD" secondAttribute="trailing" constant="80" id="jff-Sr-vbo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M2m-Lj-9Dz" secondAttribute="trailing" constant="80" id="k6d-Bs-hLy"/>
+                            <constraint firstItem="yww-ae-iv3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="kCr-Fa-Wsn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
